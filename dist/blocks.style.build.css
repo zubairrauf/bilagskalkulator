@@ -1,0 +1,226 @@
+/**
+ * #.# Common SCSS
+ *
+ * Can include things like variables and mixins
+ * that are used across the project.
+*/
+/**
+ * #.# Styles
+ *
+ * CSS for both Frontend+Backend.
+ */
+#tpltx-container {
+  max-width: 100%;
+  background-color: #e0eceb;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center; }
+
+.wp-block-cgb-block-trptx-bilagsslider {
+  padding: 100px 0;
+  color: #264059;
+  margin: 0 auto;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-align: center;
+      align-items: center;
+  font-family: "roboto";
+  width: 1280px; }
+
+.tpltx_title-container {
+  max-width: 700px;
+  text-align: center; }
+
+.tpltx_title {
+  font-family: "roboto";
+  font-size: 30px;
+  font-weight: 900;
+  line-height: 35px;
+  padding: 0 0 20px; }
+
+.tpltx_description {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  padding: 0 50px 50px;
+  margin: auto; }
+
+.tpltx_slider-container {
+  background-color: #fff;
+  border-radius: 10px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  padding: 50px;
+  margin: 30 auto;
+  max-width: 1035px;
+  width: 100%; }
+
+.tpltx_col-slider {
+  width: 70%;
+  padding-right: 50px; }
+
+.slider-title {
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 500;
+  color: #f76552;
+  padding: 0 0 20px; }
+
+.slider-text {
+  font-size: 30px;
+  line-height: 35px;
+  font-weight: 900;
+  color: #264059;
+  padding: 0 0 50px; }
+
+.tpltx_col-result {
+  -ms-flex-align: center;
+      align-items: center;
+  background-color: #264059;
+  border-radius: 10px;
+  color: #f4f4f4;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-pack: center;
+      justify-content: center;
+  padding: 10px;
+  width: 350px;
+  height: 150px; }
+
+.tpltx_result-title {
+  font-family: "roboto";
+  font-size: 24px;
+  font-weight: 900;
+  line-height: 28px;
+  padding: 0 0 10px; }
+
+.tpltx_result-text {
+  font-family: "roboto";
+  font-size: 60px;
+  font-weight: 900;
+  line-height: 70px;
+  color: #f76552; }
+
+.tpltx_button {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+  background-color: #f76552;
+  border-radius: 18px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #f4f4f4;
+  height: 50px;
+  width: 180px;
+  text-decoration: none;
+  margin: 50px auto 0; }
+
+input[type="range"] {
+  height: 38px;
+  -webkit-appearance: none;
+  margin: 10px 0;
+  width: 100%; }
+
+input[type="range"]:focus {
+  outline: none; }
+
+input[type="range"]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 5px;
+  cursor: pointer;
+  background: #264059;
+  border-radius: 10px; }
+
+input[type="range"]::-webkit-slider-thumb {
+  height: 30px;
+  width: 30px;
+  border-radius: 15px;
+  background-color: #264059;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -15px; }
+
+input[type="range"]:focus::-webkit-slider-runnable-track {
+  background: #264059; }
+
+input[type="range"]::-moz-range-track {
+  width: 100%;
+  height: 5px;
+  cursor: pointer;
+  background: #264059;
+  border-radius: 5px; }
+
+input[type="range"]::-moz-range-thumb {
+  height: 30px;
+  width: 30px;
+  border-radius: 15px;
+  background: #264059;
+  cursor: pointer; }
+
+input[type="range"]::-ms-track {
+  width: 100%;
+  height: 5px;
+  cursor: pointer;
+  background: transparent;
+  border-color: transparent;
+  color: transparent; }
+
+input[type="range"]::-ms-fill-lower {
+  background: #264059;
+  border-radius: 10px; }
+
+input[type="range"]::-ms-fill-upper {
+  background: #264059;
+  border-radius: 10px; }
+
+input[type="range"]::-ms-thumb {
+  margin-top: 1px;
+  height: 30px;
+  width: 30px;
+  border-radius: 15px;
+  background: #264059;
+  cursor: pointer; }
+
+input[type="range"]:focus::-ms-fill-lower {
+  background: #264059; }
+
+input[type="range"]:focus::-ms-fill-upper {
+  background: #264059; }
+
+/**********Responsive*********/
+@media (max-width: 1025px) {
+  .wp-block-cgb-block-trptx-bilagsslider {
+    padding: 50px 0;
+    border-top: 1px sold blue; }
+  .tpltx_slider-container {
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-align: center;
+        align-items: center;
+    -ms-flex-pack: justify;
+        justify-content: space-between;
+    text-align: center;
+    padding: 0; }
+  .tpltx_col-slider {
+    width: 100%;
+    padding: 50px 20px; }
+  .tpltx_col-result {
+    width: 100%;
+    border-top-right-radius: 0;
+    border-top-left-radius: 0; }
+  .tpltx_result-title {
+    font-size: 18px; }
+  .tpltx_result-text {
+    font-size: 40px; } }

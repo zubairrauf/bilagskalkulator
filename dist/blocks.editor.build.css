@@ -1,0 +1,27 @@
+/**
+ * #.# Common SCSS
+ *
+ * Can include things like variables and mixins
+ * that are used across the project.
+*/
+/**
+ * #.# Editor Styles
+ *
+ * CSS for just Backend enqueued after style.scss
+ * which makes it higher in priority.
+ */
+#trpltx-backend-container {
+  margin: auto;
+  border: solid 1px red; }
+
+.wp-block-cgb-block-trptx-bilagsslider {
+  color: #264059;
+  margin: 0 auto;
+  padding: 2rem;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-align: center;
+      align-items: center;
+  font-family: "roboto"; }

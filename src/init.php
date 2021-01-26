@@ -153,9 +153,16 @@ function render_bilagsslider( $attr ) {
 			var slider = document.getElementById('tpltx-bilagsslider');
 			var antallBilagSpan = document.getElementById('tpltx-antall');
 			var resultSpan = document.getElementById('tpltx-result');
+			var hoursSaved = 0;
 			slider.addEventListener('input', function(){
+				hoursSaved = (slider.value * timeDifference) / 3600;
+				if(hoursSaved < 1) {
+					hoursSaved = 0;
+				} else {
+					hoursSaved = Math.ceil(hoursSaved);
+				}
 				antallBilagSpan.innerHTML = slider.value;
-				resultSpan.innerHTML = Math.ceil((slider.value * timeDifference) / 3600);
+				resultSpan.innerHTML = hoursSaved;
 			})
 		</script>
 	";

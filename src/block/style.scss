@@ -12,7 +12,7 @@
 }
 
 .wp-block-cgb-block-trptx-bilagsslider {
-	padding: 100px 0;
+	padding: 100px 20px;
 	color: $dark;
 	margin: 0 auto;
 	display: flex;
@@ -39,7 +39,7 @@
 	font-size: 16px;
 	font-weight: 400;
 	line-height: 19px;
-	padding: 0 50px 50px;
+	padding: 0 50px;
 	margin: auto;
 }
 
@@ -49,14 +49,14 @@
 	display: flex;
 	justify-content: space-between;
 	padding: 50px;
-	margin: 30 auto;
+	margin: 50px auto;
 	max-width: 1035px;
 	width: 100%;
 }
 
 .tpltx_col-slider {
 	width: 70%;
-	padding-right: 50px;
+	padding-right: 100px;
 }
 
 .slider-title {
@@ -72,7 +72,7 @@
 	line-height: 35px;
 	font-weight: 900;
 	color: $dark;
-	padding: 0 0 50px;
+	padding: 0 0 25px;
 }
 
 .tpltx_col-result {
@@ -116,98 +116,24 @@
 	height: 50px;
 	width: 180px;
 	text-decoration: none;
-	margin: 50px auto 0;
+	// margin: 50px auto 0;
 }
 
 // .tpltx_button:hover {
 // 	background-color: $dark;
 // }
 
-//Styling the slider
-input[type="range"] {
-	height: 38px;
-	-webkit-appearance: none;
-	margin: 10px 0;
-	width: 100%;
-}
-input[type="range"]:focus {
-	outline: none;
-}
-input[type="range"]::-webkit-slider-runnable-track {
-	width: 100%;
-	height: 5px;
-	cursor: pointer;
-	background: #264059;
-	border-radius: 10px;
-}
-input[type="range"]::-webkit-slider-thumb {
-	height: 30px;
-	width: 30px;
-	border-radius: 15px;
-	background-color: #264059;
-	cursor: pointer;
-	-webkit-appearance: none;
-	margin-top: -15px;
-}
-input[type="range"]:focus::-webkit-slider-runnable-track {
-	background: #264059;
-}
-input[type="range"]::-moz-range-track {
-	width: 100%;
-	height: 5px;
-	cursor: pointer;
-	background: #264059;
-	border-radius: 5px;
-}
-input[type="range"]::-moz-range-thumb {
-	height: 30px;
-	width: 30px;
-	border-radius: 15px;
-	background: #264059;
-	cursor: pointer;
-}
-input[type="range"]::-ms-track {
-	width: 100%;
-	height: 5px;
-	cursor: pointer;
-	background: transparent;
-	border-color: transparent;
-	color: transparent;
-}
-input[type="range"]::-ms-fill-lower {
-	background: #264059;
-	border-radius: 10px;
-}
-input[type="range"]::-ms-fill-upper {
-	background: #264059;
-	border-radius: 10px;
-}
-input[type="range"]::-ms-thumb {
-	margin-top: 1px;
-	height: 30px;
-	width: 30px;
-	border-radius: 15px;
-	background: #264059;
-	cursor: pointer;
-}
-input[type="range"]:focus::-ms-fill-lower {
-	background: #264059;
-}
-input[type="range"]:focus::-ms-fill-upper {
-	background: #264059;
-}
-
 /**********Responsive*********/
 @media (max-width: 1025px) {
 	.wp-block-cgb-block-trptx-bilagsslider {
-		padding: 50px 0;
-		border-top: 1px sold blue;
+		padding: 50px 20px 50px;
 	}
 	.tpltx_slider-container {
 		flex-direction: column;
 		align-items: center;
 		justify-content: space-between;
 		text-align: center;
+		margin: 20px 0 50px;
 		padding: 0;
 	}
 	.tpltx_col-slider {
@@ -226,4 +152,118 @@ input[type="range"]:focus::-ms-fill-upper {
 	.tpltx_result-text {
 		font-size: 40px;
 	}
+}
+
+/*****Slider styles******/
+//Hiding the slider in all browsers
+#tpltx-bilagsslider {
+	-webkit-appearance: none; /* Hides the slider so that custom slider can be made */
+	width: 100%; /* Specific width is required for Firefox. */
+	background: transparent; /* Otherwise white in Chrome */
+}
+
+#tpltx-bilagsslider::-webkit-slider-thumb {
+	-webkit-appearance: none;
+}
+
+#tpltx-bilagsslider:focus {
+	outline: none; /* Removes the blue border. You should probably do some kind of focus styling for accessibility reasons though. */
+}
+
+#tpltx-bilagsslider::-ms-track {
+	width: 100%;
+	cursor: pointer;
+
+	/* Hides the slider so custom styles can be added */
+	background: transparent;
+	border-color: transparent;
+	color: transparent;
+}
+
+//Cross browser slider styles
+#tpltx-bilagsslider {
+	height: 36px;
+	-webkit-appearance: none;
+	margin: 10px 0;
+	width: 100%;
+}
+#tpltx-bilagsslider:focus {
+	outline: none;
+}
+#tpltx-bilagsslider::-webkit-slider-runnable-track {
+	width: 100%;
+	height: 5px;
+	cursor: pointer;
+	box-shadow: 0px 0px 0px $dark;
+	background: $dark;
+	border-radius: 5px;
+	border: 0px solid $dark;
+}
+#tpltx-bilagsslider::-webkit-slider-thumb {
+	box-shadow: 0px 0px 0px $dark;
+	border: 0px solid $dark;
+	height: 30px;
+	width: 30px;
+	border-radius: 15px;
+	background: $dark;
+	cursor: pointer;
+	-webkit-appearance: none;
+	margin-top: -12.5px;
+}
+#tpltx-bilagsslider:focus::-webkit-slider-runnable-track {
+	background: $dark;
+}
+#tpltx-bilagsslider::-moz-range-track {
+	width: 100%;
+	height: 5px;
+	cursor: pointer;
+	box-shadow: 0px 0px 0px $dark;
+	background: $dark;
+	border-radius: 5px;
+	border: 0px solid $dark;
+}
+#tpltx-bilagsslider::-moz-range-thumb {
+	box-shadow: 0px 0px 0px $dark;
+	border: 0px solid $dark;
+	height: 30px;
+	width: 30px;
+	border-radius: 15px;
+	background: $dark;
+	cursor: pointer;
+}
+#tpltx-bilagsslider::-ms-track {
+	width: 100%;
+	height: 5px;
+	cursor: pointer;
+	background: transparent;
+	border-color: transparent;
+	color: transparent;
+}
+#tpltx-bilagsslider::-ms-fill-lower {
+	background: $dark;
+	border: 0px solid $dark;
+	border-radius: 10px;
+	box-shadow: 0px 0px 0px $dark;
+}
+#tpltx-bilagsslider::-ms-fill-upper {
+	background: $dark;
+	border: 0px solid $dark;
+	border-radius: 10px;
+	box-shadow: 0px 0px 0px $dark;
+}
+#tpltx-bilagsslider::-ms-thumb {
+	margin-top: 1px;
+	box-shadow: 0px 0px 0px $dark;
+	border: 0px solid $dark;
+	height: 30px;
+	width: 30px;
+	border-radius: 15px;
+	background: $dark;
+	cursor: pointer;
+}
+#tpltx-bilagsslider:focus::-ms-fill-lower {
+	background: $dark;
+}
+#tpltx-bilagsslider:focus::-ms-fill-upper {
+	background: $dark;
 }

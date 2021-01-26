@@ -60,6 +60,7 @@ function trptx_bilagsslider_cgb_block_assets() { // phpcs:ignore
 		[
 			'pluginDirPath' => plugin_dir_path( __DIR__ ),
 			'pluginDirUrl'  => plugin_dir_url( __DIR__ ),
+			'my_image_url' => plugins_url( './preview.png', __FILE__ )
 			// Add more data here that you want to access from `cgbGlobal` object.
 		]
 	);
@@ -113,7 +114,7 @@ function render_bilagsslider( $attr ) {
 	if(isset($attr["buttonURL"])) {
 		$buttonURL = $attr["buttonURL"];
 	} else {
-		$buttonURL = "https://tripletext.no";
+		$buttonURL = "https://www.tripletex.no/kontakt-oss";
 	}
 
 	$timeDifference = $timeWithout - $timeWith;

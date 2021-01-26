@@ -13,7 +13,7 @@ const { __ } = wp.i18n; // Import __() from wp.i18n
 const { Fragment } = wp.element;
 const { registerBlockType } = wp.blocks; // Import registerBlockType() from wp.blocks
 const { InspectorControls } = wp.editor;
-const { ServersideRender } = wp.components;
+const { ServerSideRender } = wp.components;
 
 registerBlockType( 'cgb/block-trptx-bilagsslider', {
 	// Block name. Block names must be string that contains a namespace prefix. Example: my-plugin/my-custom-block.
@@ -27,14 +27,14 @@ registerBlockType( 'cgb/block-trptx-bilagsslider', {
 		timeWithoutAutomation: { type: 'string', default: 180 },
 		timeWithAutomation: { type: 'string', default: 26 },
 		buttonText: { type: 'string', default: 'Bestill en demo' },
-		buttonURL: { type: 'string', default: 'https://tripletex.no' },
+		buttonURL: { type: 'string', default: 'https://www.tripletex.no/kontakt-oss' },
 	},
 
 	edit: ( { attributes, setAttributes, className } ) => {
 		return (
 			<Fragment>
-				<div id="trpltx-backend-container">
-					<h1>Preview comes later</h1>
+				<div className="trpltx-preview">
+					<img src={ cgbGlobal.my_image_url } alt="Preview of Bilagsslider" />
 				</div>
 				<InspectorControls>
 					<div className="tpltx-input-container">
@@ -90,7 +90,7 @@ registerBlockType( 'cgb/block-trptx-bilagsslider', {
 								if ( e.target.value.replace( /\s/g, '' ).length > 0 ) {
 									setAttributes( { buttonURL: e.target.value } );
 								} else {
-									setAttributes( { buttonURL: 'https://tripletex.no' } );
+									setAttributes( { buttonURL: 'https://www.tripletex.no/kontakt-oss' } );
 								}
 							} }
 						/><br /><br />

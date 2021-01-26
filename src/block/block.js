@@ -16,8 +16,8 @@ const { InspectorControls } = wp.editor;
 
 registerBlockType( 'cgb/block-trptx-bilagsslider', {
 	// Block name. Block names must be string that contains a namespace prefix. Example: my-plugin/my-custom-block.
-	title: __( 'trptx-bilagsslider - CGB Block' ), // Block title.
-	icon: 'shield', // Block icon from Dashicons → https://developer.wordpress.org/resource/dashicons/.
+	title: __( 'Bilagskalkulator' ), // Block title.
+	icon: 'calculator', // Block icon from Dashicons → https://developer.wordpress.org/resource/dashicons/.
 	category: 'common', // Block category — Group blocks together based on common traits E.g. common, formatting, layout widgets, embed.
 	attributes: {
 		title: { type: 'string', default: 'Hva kan du spare med bilagsautomasjon?' },

@@ -4,17 +4,19 @@
  * CSS for just Backend enqueued after style.scss
  * which makes it higher in priority.
  */
-#trpltx-backend-container {
-	margin: auto;
-	border: solid 1px red;
+
+.tpltx-input-container {
+	padding: 5px;
 }
 
-.wp-block-cgb-block-trptx-bilagsslider {
-	color: $dark;
-	margin: 0 auto;
-	padding: 2rem;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	font-family: "roboto";
+#input-timewithout,
+#input-timewith {
+	width: 60px;
+	margin: 5px;
+}
+
+#input-buttton-text,
+#input-button-url {
+	width: 200px;
+	margin: 5px;
 }

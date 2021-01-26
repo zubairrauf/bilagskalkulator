@@ -13,7 +13,7 @@ const { __ } = wp.i18n; // Import __() from wp.i18n
 const { Fragment } = wp.element;
 const { registerBlockType } = wp.blocks; // Import registerBlockType() from wp.blocks
 const { InspectorControls } = wp.editor;
-const { ServerSideRender } = wp.components;
+// const { ServerSideRender } = wp.components;
 
 registerBlockType( 'cgb/block-trptx-bilagsslider', {
 	// Block name. Block names must be string that contains a namespace prefix. Example: my-plugin/my-custom-block.
@@ -38,7 +38,7 @@ registerBlockType( 'cgb/block-trptx-bilagsslider', {
 				</div>
 				<InspectorControls>
 					<div className="tpltx-input-container">
-						<label htmlFor="input-timewithout"> Tid uten autmasjon:</label><br />
+						<label htmlFor="input-timewithout"> Tid uten automasjon:</label><br />
 						<input
 							id="input-timewithout"
 							type="text"
@@ -51,7 +51,9 @@ registerBlockType( 'cgb/block-trptx-bilagsslider', {
 									setAttributes( { timeWithoutAutomation: 180 } );
 								}
 							} }
-						/><br /><br />
+						/>
+						<span>sekunder</span>
+						<br /><br />
 						<label htmlFor="input-timewith"> Tid med autmasjon:</label><br />
 						<input
 							id="input-timewith"
@@ -65,8 +67,10 @@ registerBlockType( 'cgb/block-trptx-bilagsslider', {
 									setAttributes( { timeWithAutomation: 26 } );
 								}
 							} }
-						/><br /><br />
-						<label htmlFor="input-button-text"> Button text:</label><br />
+						/>
+						<span>sekunder</span>
+						<br /><br />
+						<label htmlFor="input-button-text"> Button tekst:</label><br />
 						<input
 							id="input-buttton-text"
 							type="text"

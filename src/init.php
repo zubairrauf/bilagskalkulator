@@ -118,7 +118,7 @@ function render_bilagsslider( $attr ) {
 
 	$timeDifference = $timeWithout - $timeWith;
 
-	print "
+	return "
 		<div id='tpltx-container'>
 			<div class='wp-block-cgb-block-trptx-bilagsslider'>
 				<div class='tpltx_title-container'>

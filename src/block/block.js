@@ -13,12 +13,13 @@ const { __ } = wp.i18n; // Import __() from wp.i18n
 const { Fragment } = wp.element;
 const { registerBlockType } = wp.blocks; // Import registerBlockType() from wp.blocks
 const { InspectorControls } = wp.editor;
+const { ServersideRender } = wp.components;
 
 registerBlockType( 'cgb/block-trptx-bilagsslider', {
 	// Block name. Block names must be string that contains a namespace prefix. Example: my-plugin/my-custom-block.
 	title: __( 'Bilagskalkulator' ), // Block title.
 	icon: 'calculator', // Block icon from Dashicons → https://developer.wordpress.org/resource/dashicons/.
-	category: 'common', // Block category — Group blocks together based on common traits E.g. common, formatting, layout widgets, embed.
+	category: 'widgets', // Block category — Group blocks together based on common traits E.g. common, formatting, layout widgets, embed.
 	attributes: {
 		title: { type: 'string', default: 'Hva kan du spare med bilagsautomasjon?' },
 		description: { type: 'string', default: 'Finn ut hva bilagsautomasjon kan bety for deg og din bedrift ved å bruke kalkulatoren nedenfor til å estimere hvor mye du vil spare i kostnad og tid.' },

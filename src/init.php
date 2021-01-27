@@ -157,7 +157,7 @@ function render_bilagsslider( $attr ) {
 			var hoursSaved = 0;
 			slider.addEventListener('input', function(){
 				hoursSaved = (slider.value * timeDifference) / 3600;
-				if(hoursSaved < 1) {
+				if(hoursSaved < 0.5) {
 					hoursSaved = 0;
 				} else {
 					hoursSaved = Math.ceil(hoursSaved);

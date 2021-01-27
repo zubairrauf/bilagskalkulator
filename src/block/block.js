@@ -26,7 +26,7 @@ registerBlockType( 'cgb/block-trptx-bilagsslider', {
 		sliderValue: { type: 'string', default: '1000' },
 		timeWithoutAutomation: { type: 'string', default: 180 },
 		timeWithAutomation: { type: 'string', default: 26 },
-		buttonText: { type: 'string', default: 'Bestill en demo' },
+		buttonText: { type: 'string', default: 'Book en demo' },
 		buttonURL: { type: 'string', default: 'https://www.tripletex.no/kontakt-oss' },
 	},
 
@@ -80,7 +80,7 @@ registerBlockType( 'cgb/block-trptx-bilagsslider', {
 								if ( e.target.value.replace( /\s/g, '' ).length > 0 ) {
 									setAttributes( { buttonText: e.target.value } );
 								} else {
-									setAttributes( { buttonText: 'Bestill en demo' } );
+									setAttributes( { buttonText: 'Book en demo' } );
 								}
 							} }
 						/><br /><br />

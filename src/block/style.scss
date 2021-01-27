@@ -109,7 +109,7 @@
 	align-items: center;
 	justify-content: center;
 	background-color: $accent;
-	border-radius: 18px;
+	border-radius: 10px;
 	font-size: 16px;
 	font-weight: 500;
 	color: $white;
@@ -117,6 +117,16 @@
 	width: 180px;
 	text-decoration: none;
 	// margin: 50px auto 0;
+}
+
+#tpltx_button:active {
+	background-color: $accent;
+	text-decoration: none;
+}
+
+#tpltx_button:visited {
+	background-color: $accent;
+	text-decoration: none;
 }
 
 // .tpltx_button:hover {

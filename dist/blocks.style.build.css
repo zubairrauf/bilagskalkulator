@@ -118,12 +118,20 @@
   -ms-flex-pack: center;
       justify-content: center;
   background-color: #f76552;
-  border-radius: 18px;
+  border-radius: 10px;
   font-size: 16px;
   font-weight: 500;
   color: #f4f4f4;
   height: 50px;
   width: 180px;
+  text-decoration: none; }
+
+#tpltx_button:active {
+  background-color: #f76552;
+  text-decoration: none; }
+
+#tpltx_button:visited {
+  background-color: #f76552;
   text-decoration: none; }
 
 /**********Responsive*********/

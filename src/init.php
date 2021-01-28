@@ -128,20 +128,20 @@ function render_bilagsslider( $attr ) {
 				</div>
 				<div class='tpltx_slider-container'>
 					<div class='tpltx_col-slider'>
-						<p class='slider-title'>Antall bilag i måneden</p>
-						<p class='slider-text'><span id='tpltx-antall'>2000</span> bilag</p>
+						<p class='slider-title'>Antall bilag per år</p>
+						<p class='slider-text'><span id='tpltx-antall'>10000</span> bilag</p>
 						<input
 							id='tpltx-bilagsslider'
 							class='tpltx-bilagsslider'
 							type='range'
 							min='1'
-							max='4000'
+							max='20000'
 							value={ attributes.sliderValue }
 						/>
 					</div>
 					<div class='tpltx_col-result'>
-						<h3 class='tpltx_result-title'>Timer spart per mnd:</h3>
-						<h2 class='tpltx_result-text' id='tpltx-result'>". ceil(2000 * $timeDifference / 3600) ."</h2>
+						<h3 class='tpltx_result-title'>Timer spart per år:</h3>
+						<h2 class='tpltx_result-text' id='tpltx-result'>". ceil(10000 * $timeDifference / 3600) ."</h2>
 					</div>
 				</div>
 				<a class='tpltx_button' id='tpltx_button' href='". $buttonURL ."'>
